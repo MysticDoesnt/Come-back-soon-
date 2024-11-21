@@ -1,25 +1,63 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Background Music</title>
-	<style>
-		body {
-			background-image: url('background-image.jpg');
-			background-size: cover;
-			background-position: center;
-			background-attachment: fixed;
-			font-family: Arial, sans-serif;
-			color: #fff;
-		}
-		#audio {
-			display: none;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Bg</title>
 </head>
+<style>
+
+.btn {
+    background-color: transparent; 
+    color: black;
+    border: none;
+    opacity: .3;
+}
+
+#icon{
+    color: red;
+    opacity: 1;
+}
+#music{
+    display: none;
+}
+
+</style>
+
 <body>
-	<audio id="audio" src="backgroundmusic.mp3" loop autoplay></audio>
-	<h1>Welcome to my website!</h1>
-	<p>This website has background music!</p>
+    <h1 class="title">Music Bg</h1>
+    <div>
+        <audio src="backgroundmusic.mp3" id="background" loop="" autoplay="true"></audio>
+        
+        <button id="icon" onclick="pause()" class="btn" type="button">
+            <i class="fa-solid fa-music"></i>
+        </button>
+        <button id="music" onclick="play()" class="btn" type="button">
+            <i class="fa-solid fa-music"></i>
+        </button>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        var bg = document.getElementById("background");
+        bg.volume = 0.05;
+        const music = document.getElementById("music");
+        const icon = document.getElementById("icon");
+
+function play() { 
+  bg.play();
+  icon.style.display = 'block';
+  music.style.display = 'none'; 
+} 
+function pause() { 
+  bg.pause();
+  icon.style.display = 'none';
+  music.style.display = 'block';  
+} 
+    </script>
 </body>
 </html>
