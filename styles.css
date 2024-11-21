@@ -1,0 +1,26 @@
+/* Default Light Mode Styles (for users who might not have dark mode enabled) */
+body {
+    background-color: #ffffff; /* Light background */
+    color: #333333; /* Dark text for good contrast */
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+h1, p {
+    text-align: center;
+}
+
+/* Dark Mode Styles (for when the dark class is added) */
+body.dark {
+    background-color: #181818; /* Dark background */
+    color: #e0e0e0; /* Light text for readability */
+}
+
+body.dark h1, body.dark p {
+    color: #e0e0e0; /* Light text for dark mode */
+}
+
+/* Link styles for dark mode */
+body.dark a {
+    color: #76c7f5; /* Light blue links for dark mode */
+}
