@@ -12,7 +12,7 @@ h1, p {
 
 /* Dark Mode Styles (for when the dark class is added) */
 body.dark {
-    background-color: #181818; /* Dark background */
+    background-color: #222034; /* Dark background */
     color: #e0e0e0; /* Light text for readability */
 }
 
