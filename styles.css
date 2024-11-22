@@ -4,10 +4,12 @@ body {
     color: #333333; /* Dark text for good contrast */
     font-family: Arial, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-}
-
-h1, p {
-    text-align: center;
+    height: 100%; /* Ensure body takes full height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    text-align: center; /* Center text inside body */
 }
 
 /* Dark Mode Styles (for when the dark class is added) */
@@ -23,4 +25,18 @@ body.dark h1, body.dark p {
 /* Link styles for dark mode */
 body.dark a {
     color: #76c7f5; /* Light blue links for dark mode */
+}
+
+/* Optional: Style the container for the image */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the image */
+img {
+    max-width: 100%; /* Ensure the image scales with the screen width */
+    max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
+    object-fit: contain; /* Maintain aspect ratio while filling the container */
 }
