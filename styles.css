@@ -36,7 +36,7 @@ body.dark a {
 
 /* Style the image */
 img {
-    max-width: 100%; /* Ensure the image scales with the screen width */
-    max-height: 100%; /* Ensure the image doesn't exceed the viewport height */
+    max-width: 110%; /* Ensure the image scales with the screen width */
+    max-height: 110%; /* Ensure the image doesn't exceed the viewport height */
     object-fit: contain; /* Maintain aspect ratio while filling the container */
 }
