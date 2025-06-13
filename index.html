@@ -3,16 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vail.inc is Coming Back.</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Ensure path to CSS is correct -->
+    <title>Centered Image Page</title>
+    <link rel="stylesheet" href="custom-style.css">
+    <style>
+        /* Additional centering styles */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <!-- Centering the image inside a div (optional, but provides flexibility) -->
-    <div class="image-container">
-        <!-- Replace 'images/your-image.png' with the correct path to your image -->
-        <img src="images/site404.png" alt="Centered Image">
+    <div class="center-content">
+         <img src="images/site404.png" alt="Centered Image">
+        <p>INSERT TEXT HERE</p>
     </div>
-
-    <script src="script.js"></script> <!-- Ensure path to JS is correct -->
 </body>
 </html>
