@@ -1,0 +1,36 @@
+/* custom-style.css */
+
+/* Apply to entire body */
+body {
+    background-color: #121212; /* Very dark grey */
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Ensure links are readable */
+a {
+    color: #b0c4ff; /* Light blue for contrast */
+}
+
+a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Optional: Style headers for readability */
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Optional: Style code blocks (if present) */
+code, pre {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: Consolas, monospace;
+}
+
+/* Optional: style navbars or footers if present */
+nav, footer {
+    background-color: #1a1a1a;
+    color: white;
+}
